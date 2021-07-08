@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		inteiro contador = 1
+		inteiro limite = 20
+		
+		para(inteiro cont = 1; cont <= limite; cont++){
+			escreva(cont, "\n") 
+		}
+		
+		
+	}
+}
