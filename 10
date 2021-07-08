@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro paisA = 80000 
+		inteiro paisB = 200000 
+
+		inteiro anos = 0
+
+		enquanto(paisA < paisB) {
+			paisA = paisA + (paisA * 0.03)
+			paisB = paisB + (paisB * 0.015)
+
+			anos++
+		}
+
+		escreva("numero de habitante pais A: ", paisA, "\n")
+		escreva("numero de habitante pais B: ", paisB, "\n")
+
+		escreva("foram necessários ", anos, " anos para o pais A ter a maior populacão")
+			
+	}
+}
