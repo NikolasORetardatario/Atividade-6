@@ -1,0 +1,43 @@
+programa
+{
+	inclua biblioteca Texto --> t
+	
+	funcao inicio()
+	{
+		cadeia nome
+		inteiro idade
+		real salario
+
+		inteiro qntdCaracteres
+
+		escreva("Digite um nome: ")
+		leia(nome)
+
+		qntdCaracteres = t.numero_caracteres(nome)
+
+		enquanto (qntdCaracteres < 3) {
+			escreva("Nome inválido. Digite novamente: ")
+			leia(nome)
+			qntdCaracteres = t.numero_caracteres(nome)
+		}
+
+		escreva("Digite uma idade: ")
+		leia(idade)
+
+		enquanto (idade < 0 ou idade > 150) {
+			escreva("idade inválida. Digite novamente: ")
+			leia(idade)
+		}
+
+		escreva("Digite o salario: ")
+		leia(salario)
+
+		enquanto (salario < 0 ) {
+			escreva("Salário inválido.Digite novamente: ")
+			leia(salario)
+		}
+
+		escreva(nome, " tem ", idade, " anos e ganha R$ ", salario )
+		
+	}
+}
