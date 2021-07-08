@@ -1,0 +1,24 @@
+programa 
+{
+    inclua biblioteca Matematica --> mat
+    
+	funcao inicio() 
+	{
+		
+		inteiro num = 0
+		inteiro numAuxiliar = 0
+		
+		para(inteiro i = 0; i< 5; i++){
+		    escreva("Digite um número: ")
+		    leia(num)
+		    
+		    se(numAuxiliar < num){
+		        numAuxiliar = num
+		    }
+		}
+		
+		escreva("\nO maior número é: ", numAuxiliar ,"\n")
+		
+		
+	}
+}
