@@ -1,0 +1,37 @@
+programa
+{
+
+	funcao inicio()
+	{
+		inteiro contador = 1
+		inteiro n
+
+		escreva("Quantos termos deseja?")
+		leia(n)
+	
+		inteiro primeiroTermo = 0
+		inteiro segundoTermo = 1
+		inteiro proximoTermo
+		
+
+		escreva(primeiroTermo, ", ")
+		escreva(segundoTermo, ", ")
+
+		enquanto(contador <= n-2) { 
+			
+			proximoTermo = primeiroTermo + segundoTermo
+			primeiroTermo = segundoTermo
+			segundoTermo = proximoTermo
+	
+			se(contador != n-2) {
+				escreva(proximoTermo, ", ")
+			}senao {
+				escreva(proximoTermo, ". ")
+			}
+			
+			contador++
+		}
+
+	
+	}
+}
